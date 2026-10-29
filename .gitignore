@@ -1,0 +1,19 @@
+# Local working files and generated deliverable copies
+/work/
+/outputs/
+
+# OS and editor files
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local credentials and dependencies
+.env
+.env.*
+!.env.example
+node_modules/
+__pycache__/
+*.py[cod]
