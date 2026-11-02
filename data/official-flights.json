@@ -1,0 +1,1660 @@
+{
+  "schemaVersion": 1,
+  "sourceTitle": "长龙航空官网 · 航班动态",
+  "sourcePage": "https://www.loongair.cn/#/web/home",
+  "date": "2026-11-02",
+  "retrievedAt": "2026-11-02T03:56:56.026Z",
+  "airportCodes": {
+    "杭州": "HGH",
+    "广州": "CAN",
+    "银川": "INC",
+    "北京首都": "PEK",
+    "阿勒泰": "AAT",
+    "阿克苏": "AKU",
+    "成都双流": "CTU",
+    "长沙": "CSX",
+    "长春": "CGQ",
+    "大连": "DLC",
+    "达州": "DZH",
+    "贵阳": "KWE",
+    "哈尔滨": "HRB",
+    "呼和浩特": "HET",
+    "海口": "HAK",
+    "济南": "TNA",
+    "昆明": "KMG",
+    "兰州": "LHW",
+    "喀什": "KHG",
+    "临沂": "LYI",
+    "宁波": "NGB",
+    "丽江": "LJG",
+    "深圳": "SZX",
+    "沈阳": "SHE",
+    "三亚": "SYX",
+    "乌鲁木齐": "URC",
+    "温州": "WNZ",
+    "太原": "TYN",
+    "西双版纳": "JHG",
+    "徐州": "XUZ",
+    "西安": "XIY",
+    "郑州": "CGO",
+    "武汉": "WUH",
+    "成都天府": "TFU",
+    "阿拉尔": "ACF",
+    "包头": "BAV",
+    "赤峰": "CIF",
+    "巴中": "BZX",
+    "重庆": "CKG",
+    "嘉兴": "JNH",
+    "南京": "NKG",
+    "青岛": "TAO",
+    "海拉尔": "HLD",
+    "荆州": "SHS",
+    "烟台": "YNT",
+    "西宁": "XNN",
+    "东营": "DOY",
+    "福州": "FOC",
+    "常州": "CZX",
+    "泉州": "JJN",
+    "邯郸": "HDG",
+    "鸡西": "JXA",
+    "通化": "TNH",
+    "恩施": "ENH",
+    "上海浦东": "PVG",
+    "无锡": "WUX",
+    "遵义新舟": "ZYI",
+    "赣州": "KOW",
+    "衡阳": "HNY",
+    "菏泽": "HZA",
+    "克拉玛依": "KRY",
+    "柳州": "LZH",
+    "泸州": "LZO",
+    "芒市": "LUM",
+    "南宁": "NNG",
+    "图木舒克": "TWC",
+    "潍坊": "WEF",
+    "威海": "WEH",
+    "襄阳": "XFN",
+    "张家界": "DYG",
+    "珠海": "ZUH",
+    "遵义茅台": "WMT"
+  },
+  "queries": [
+    {
+      "from": "阿克苏",
+      "to": "杭州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkFLVSIsIkMyIjoiSEdIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:41:45.346Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "阿克苏",
+      "to": "温州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkFLVSIsIkMyIjoiV05aIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:43:49.280Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "阿克苏",
+      "to": "武汉",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8102",
+          "departureAirport": "阿克苏红旗坡机场",
+          "arrivalAirport": "武汉天河国际机场",
+          "scheduledDeparture": "17:15",
+          "scheduledArrival": "21:55",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkFLVSIsIkMyIjoiV1VIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:41:59.037Z"
+    },
+    {
+      "from": "阿克苏",
+      "to": "郑州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8782",
+          "departureAirport": "阿克苏红旗坡机场",
+          "arrivalAirport": "郑州新郑国际机场",
+          "scheduledDeparture": "09:40",
+          "scheduledArrival": "13:55",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkFLVSIsIkMyIjoiQ0dPIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:41:53.404Z"
+    },
+    {
+      "from": "阿拉尔",
+      "to": "成都天府",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8164",
+          "departureAirport": "阿拉尔塔里木机场",
+          "arrivalAirport": "成都天府国际机场",
+          "scheduledDeparture": "16:10",
+          "scheduledArrival": "20:00",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkFDRiIsIkMyIjoiVEZVIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:43:57.449Z"
+    },
+    {
+      "from": "阿拉尔",
+      "to": "杭州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkFDRiIsIkMyIjoiSEdIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:44:08.166Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "阿拉尔",
+      "to": "郑州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkFDRiIsIkMyIjoiQ0dPIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:44:18.947Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "阿勒泰",
+      "to": "杭州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkFBVCIsIkMyIjoiSEdIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:43:19.354Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "阿勒泰",
+      "to": "银川",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T03:47:01.550Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "包头",
+      "to": "赤峰",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkJBViIsIkMyIjoiQ0lGIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:43:24.672Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "包头",
+      "to": "西安",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkJBViIsIkMyIjoiWElZIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:43:29.661Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "巴中",
+      "to": "宁波",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ6016",
+          "departureAirport": "巴中恩阳机场",
+          "arrivalAirport": "宁波栎社国际机场",
+          "scheduledDeparture": "12:45",
+          "scheduledArrival": "15:10",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkJaWCIsIkMyIjoiTkdCIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:43:36.974Z"
+    },
+    {
+      "from": "北京首都",
+      "to": "杭州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T03:47:05.196Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "长春",
+      "to": "重庆",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkNHUSIsIkMyIjoiQ0tHIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:47:14.406Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "长春",
+      "to": "广州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkNHUSIsIkMyIjoiQ0FOIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:47:23.412Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "长春",
+      "to": "杭州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8088",
+          "departureAirport": "长春龙嘉国际机场",
+          "arrivalAirport": "杭州萧山国际机场",
+          "scheduledDeparture": "21:15",
+          "scheduledArrival": "23:55",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02",
+          "flightStatus": "航班取消"
+        },
+        {
+          "flightNo": "GJ8041",
+          "departureAirport": "长春龙嘉国际机场",
+          "arrivalAirport": "杭州萧山国际机场",
+          "scheduledDeparture": "11:00",
+          "scheduledArrival": "14:25",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02",
+          "flightStatus": "航班延误"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkNHUSIsIkMyIjoiSEdIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:52:25.595Z"
+    },
+    {
+      "from": "长春",
+      "to": "南京",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8795",
+          "departureAirport": "长春龙嘉国际机场",
+          "arrivalAirport": "南京禄口国际机场",
+          "scheduledDeparture": "11:55",
+          "scheduledArrival": "14:35",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkNHUSIsIkMyIjoiTktHIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:44:47.054Z"
+    },
+    {
+      "from": "长春",
+      "to": "太原",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkNHUSIsIkMyIjoiVFlOIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:44:56.512Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "长春",
+      "to": "潍坊",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T02:44:43.541Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "长春",
+      "to": "武汉",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8807",
+          "departureAirport": "长春龙嘉国际机场",
+          "arrivalAirport": "武汉天河国际机场",
+          "scheduledDeparture": "07:40",
+          "scheduledArrival": "10:55",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkNHUSIsIkMyIjoiV1VIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:45:04.143Z"
+    },
+    {
+      "from": "长春",
+      "to": "西双版纳",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T02:44:48.618Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "长春",
+      "to": "徐州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8332",
+          "departureAirport": "长春龙嘉国际机场",
+          "arrivalAirport": "徐州观音国际机场",
+          "scheduledDeparture": "19:20",
+          "scheduledArrival": "21:45",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8589",
+          "departureAirport": "长春龙嘉国际机场",
+          "arrivalAirport": "徐州观音国际机场",
+          "scheduledDeparture": "13:55",
+          "scheduledArrival": "16:20",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkNHUSIsIkMyIjoiWFVaIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:45:05.053Z"
+    },
+    {
+      "from": "长春",
+      "to": "银川",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8357",
+          "departureAirport": "长春龙嘉国际机场",
+          "arrivalAirport": "银川河东国际机场",
+          "scheduledDeparture": "06:30",
+          "scheduledArrival": "09:35",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkNHUSIsIkMyIjoiSU5DIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:45:12.292Z"
+    },
+    {
+      "from": "成都双流",
+      "to": "杭州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8068",
+          "departureAirport": "成都双流国际机场",
+          "arrivalAirport": "杭州萧山国际机场",
+          "scheduledDeparture": "21:25",
+          "scheduledArrival": "23:50",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkNUVSIsIkMyIjoiSEdIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:45:12.555Z"
+    },
+    {
+      "from": "成都天府",
+      "to": "大连",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IlRGVSIsIkMyIjoiRExDIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:47:01.816Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "成都天府",
+      "to": "杭州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8164",
+          "departureAirport": "成都天府国际机场",
+          "arrivalAirport": "杭州萧山国际机场",
+          "scheduledDeparture": "21:05",
+          "scheduledArrival": "23:35",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8830",
+          "departureAirport": "成都天府国际机场",
+          "arrivalAirport": "杭州萧山国际机场",
+          "scheduledDeparture": "14:05",
+          "scheduledArrival": "16:40",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IlRGVSIsIkMyIjoiSEdIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:46:20.543Z"
+    },
+    {
+      "from": "成都天府",
+      "to": "嘉兴",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T02:47:01.945Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "成都天府",
+      "to": "荆州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IlRGVSIsIkMyIjoiU0hTIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:47:12.412Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "成都天府",
+      "to": "宁波",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8330",
+          "departureAirport": "成都天府国际机场",
+          "arrivalAirport": "宁波栎社国际机场",
+          "scheduledDeparture": "14:15",
+          "scheduledArrival": "16:45",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IlRGVSIsIkMyIjoiTkdCIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:47:19.949Z"
+    },
+    {
+      "from": "成都天府",
+      "to": "图木舒克",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T02:47:05.893Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "成都天府",
+      "to": "西宁",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IlRGVSIsIkMyIjoiWE5OIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:47:31.077Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "成都天府",
+      "to": "西双版纳",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T02:47:09.932Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "成都天府",
+      "to": "银川",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8603",
+          "departureAirport": "成都天府国际机场",
+          "arrivalAirport": "银川河东国际机场",
+          "scheduledDeparture": "09:55",
+          "scheduledArrival": "11:50",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IlRGVSIsIkMyIjoiSU5DIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:47:30.565Z"
+    },
+    {
+      "from": "福州",
+      "to": "常州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkZPQyIsIkMyIjoiQ1pYIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:50:30.465Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "福州",
+      "to": "大连",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkZPQyIsIkMyIjoiRExDIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:50:41.081Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "广州",
+      "to": "杭州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8996",
+          "departureAirport": "广州白云国际机场",
+          "arrivalAirport": "杭州萧山国际机场",
+          "scheduledDeparture": "22:45",
+          "scheduledArrival": "00:40",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8700",
+          "departureAirport": "广州白云国际机场",
+          "arrivalAirport": "杭州萧山国际机场",
+          "scheduledDeparture": "14:35",
+          "scheduledArrival": "16:45",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8860",
+          "departureAirport": "广州白云国际机场",
+          "arrivalAirport": "杭州萧山国际机场",
+          "scheduledDeparture": "06:25",
+          "scheduledArrival": "08:20",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkNBTiIsIkMyIjoiSEdIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:01:02.546Z"
+    },
+    {
+      "from": "广州",
+      "to": "兰州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkNBTiIsIkMyIjoiTEhXIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:02:57.815Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "广州",
+      "to": "银川",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8257",
+          "departureAirport": "广州白云国际机场",
+          "arrivalAirport": "银川河东国际机场",
+          "scheduledDeparture": "17:55",
+          "scheduledArrival": "21:05",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkNBTiIsIkMyIjoiSU5DIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:14:10.321Z"
+    },
+    {
+      "from": "广州",
+      "to": "郑州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T03:03:14.108Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "贵阳",
+      "to": "宁波",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IktXRSIsIkMyIjoiTkdCIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:14:37.053Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "哈尔滨",
+      "to": "常州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhSQiIsIkMyIjoiQ1pYIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:14:57.711Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "哈尔滨",
+      "to": "海口",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhSQiIsIkMyIjoiSEFLIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:15:08.034Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "哈尔滨",
+      "to": "邯郸",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhSQiIsIkMyIjoiSERHIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:17:01.348Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "哈尔滨",
+      "to": "嘉兴",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhSQiIsIkMyIjoiSk5IIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:17:23.745Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "哈尔滨",
+      "to": "三亚",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T03:19:10.741Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "哈尔滨",
+      "to": "西安",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8540",
+          "departureAirport": "哈尔滨太平国际机场",
+          "arrivalAirport": "西安咸阳国际机场",
+          "scheduledDeparture": "18:55",
+          "scheduledArrival": "22:55",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhSQiIsIkMyIjoiWElZIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:20:11.167Z"
+    },
+    {
+      "from": "哈尔滨",
+      "to": "襄阳",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T03:20:03.214Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "哈尔滨",
+      "to": "徐州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8788",
+          "departureAirport": "哈尔滨太平国际机场",
+          "arrivalAirport": "徐州观音国际机场",
+          "scheduledDeparture": "15:30",
+          "scheduledArrival": "18:10",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8187",
+          "departureAirport": "哈尔滨太平国际机场",
+          "arrivalAirport": "徐州观音国际机场",
+          "scheduledDeparture": "06:25",
+          "scheduledArrival": "09:30",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhSQiIsIkMyIjoiWFVaIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:20:11.263Z"
+    },
+    {
+      "from": "哈尔滨",
+      "to": "珠海",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T03:20:25.683Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "杭州",
+      "to": "阿克苏",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiQUtVIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:39:08.492Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "杭州",
+      "to": "阿勒泰",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiQUFUIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:39:08.196Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "杭州",
+      "to": "北京首都",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8987",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "北京首都国际机场",
+          "scheduledDeparture": "16:15",
+          "scheduledArrival": "18:35",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8887",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "北京首都国际机场",
+          "scheduledDeparture": "07:00",
+          "scheduledArrival": "09:20",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiUEVLIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:39:06.737Z"
+    },
+    {
+      "from": "杭州",
+      "to": "长春",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8087",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "长春龙嘉国际机场",
+          "scheduledDeparture": "17:10",
+          "scheduledArrival": "20:15",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiQ0dRIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:39:14.162Z"
+    },
+    {
+      "from": "杭州",
+      "to": "长沙",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8777",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "长沙黄花国际机场",
+          "scheduledDeparture": "09:15",
+          "scheduledArrival": "10:55",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiQ1NYIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:39:13.954Z"
+    },
+    {
+      "from": "杭州",
+      "to": "成都双流",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8067",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "成都双流国际机场",
+          "scheduledDeparture": "17:10",
+          "scheduledArrival": "20:20",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiQ1RVIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:39:13.417Z"
+    },
+    {
+      "from": "杭州",
+      "to": "成都天府",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T02:39:37.410Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "杭州",
+      "to": "重庆",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T02:39:37.410Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "杭州",
+      "to": "大连",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8285",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "大连周水子国际机场",
+          "scheduledDeparture": "07:45",
+          "scheduledArrival": "10:00",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiRExDIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:39:45.060Z"
+    },
+    {
+      "from": "杭州",
+      "to": "达州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8643",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "达州金垭机场",
+          "scheduledDeparture": "09:15",
+          "scheduledArrival": "11:55",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiRFpIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:39:47.631Z"
+    },
+    {
+      "from": "杭州",
+      "to": "广州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8859",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "广州白云国际机场",
+          "scheduledDeparture": "22:00",
+          "scheduledArrival": "00:20",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8995",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "广州白云国际机场",
+          "scheduledDeparture": "19:20",
+          "scheduledArrival": "21:40",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8699",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "广州白云国际机场",
+          "scheduledDeparture": "10:55",
+          "scheduledArrival": "13:25",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02",
+          "flightStatus": "已起飞"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiQ0FOIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:56:56.002Z"
+    },
+    {
+      "from": "杭州",
+      "to": "贵阳",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8809",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "贵阳龙洞堡国际机场",
+          "scheduledDeparture": "06:30",
+          "scheduledArrival": "08:55",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiS1dFIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:39:46.369Z"
+    },
+    {
+      "from": "杭州",
+      "to": "哈尔滨",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8256",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "哈尔滨太平国际机场",
+          "scheduledDeparture": "21:50",
+          "scheduledArrival": "01:00",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8665",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "哈尔滨太平国际机场",
+          "scheduledDeparture": "09:00",
+          "scheduledArrival": "11:55",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiSFJCIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:39:51.040Z"
+    },
+    {
+      "from": "杭州",
+      "to": "喀什",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiS0hHIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:40:09.731Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "杭州",
+      "to": "昆明",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8881",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "昆明长水国际机场",
+          "scheduledDeparture": "07:25",
+          "scheduledArrival": "10:55",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiS01HIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:39:59.462Z"
+    },
+    {
+      "from": "杭州",
+      "to": "兰州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8175",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "兰州中川国际机场",
+          "scheduledDeparture": "09:35",
+          "scheduledArrival": "12:45",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiTEhXIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:40:04.797Z"
+    },
+    {
+      "from": "杭州",
+      "to": "丽江",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiTEpHIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:40:20.549Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "杭州",
+      "to": "临沂",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8617",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "临沂启阳国际机场",
+          "scheduledDeparture": "08:55",
+          "scheduledArrival": "10:25",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiTFlJIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:40:05.748Z"
+    },
+    {
+      "from": "杭州",
+      "to": "三亚",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8255",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "三亚凤凰国际机场",
+          "scheduledDeparture": "13:40",
+          "scheduledArrival": "17:00",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8199",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "三亚凤凰国际机场",
+          "scheduledDeparture": "08:05",
+          "scheduledArrival": "11:20",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiU1lYIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:41:24.965Z"
+    },
+    {
+      "from": "杭州",
+      "to": "沈阳",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8865",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "沈阳桃仙国际机场",
+          "scheduledDeparture": "17:40",
+          "scheduledArrival": "20:15",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiU0hFIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:41:23.812Z"
+    },
+    {
+      "from": "杭州",
+      "to": "深圳",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8900",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "深圳宝安国际机场",
+          "scheduledDeparture": "18:55",
+          "scheduledArrival": "21:35",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8965",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "深圳宝安国际机场",
+          "scheduledDeparture": "14:15",
+          "scheduledArrival": "16:45",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8737",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "深圳宝安国际机场",
+          "scheduledDeparture": "07:10",
+          "scheduledArrival": "09:30",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiU1pYIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:41:24.699Z"
+    },
+    {
+      "from": "杭州",
+      "to": "乌鲁木齐",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiVVJDIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:41:31.645Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "杭州",
+      "to": "西安",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8153",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "西安咸阳国际机场",
+          "scheduledDeparture": "06:40",
+          "scheduledArrival": "09:25",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiWElZIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:41:43.132Z"
+    },
+    {
+      "from": "杭州",
+      "to": "西双版纳",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8263",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "西双版纳嘎洒国际机场",
+          "scheduledDeparture": "17:00",
+          "scheduledArrival": "21:00",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiSkhHIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:41:37.817Z"
+    },
+    {
+      "from": "杭州",
+      "to": "银川",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8667",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "银川河东国际机场",
+          "scheduledDeparture": "08:30",
+          "scheduledArrival": "11:35",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8081",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "银川河东国际机场",
+          "scheduledDeparture": "06:50",
+          "scheduledArrival": "09:55",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiSU5DIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:36:49.467Z"
+    },
+    {
+      "from": "杭州",
+      "to": "郑州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8781",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "郑州新郑国际机场",
+          "scheduledDeparture": "14:00",
+          "scheduledArrival": "16:00",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        },
+        {
+          "flightNo": "GJ8069",
+          "departureAirport": "杭州萧山国际机场",
+          "arrivalAirport": "郑州新郑国际机场",
+          "scheduledDeparture": "06:50",
+          "scheduledArrival": "08:40",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiQ0dPIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T02:41:50.770Z"
+    },
+    {
+      "from": "呼和浩特",
+      "to": "赤峰",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhFVCIsIkMyIjoiQ0lGIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:22:58.838Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "呼和浩特",
+      "to": "广州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8568",
+          "departureAirport": "呼和浩特白塔国际机场",
+          "arrivalAirport": "广州白云国际机场",
+          "scheduledDeparture": "21:05",
+          "scheduledArrival": "00:25",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhFVCIsIkMyIjoiQ0FOIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:23:36.762Z"
+    },
+    {
+      "from": "呼和浩特",
+      "to": "海拉尔",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8567",
+          "departureAirport": "呼和浩特白塔国际机场",
+          "arrivalAirport": "呼伦贝尔海拉尔机场",
+          "scheduledDeparture": "10:25",
+          "scheduledArrival": "12:40",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhFVCIsIkMyIjoiSExEIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:23:53.584Z"
+    },
+    {
+      "from": "嘉兴",
+      "to": "长春",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8656",
+          "departureAirport": "嘉兴南湖机场",
+          "arrivalAirport": "长春龙嘉国际机场",
+          "scheduledDeparture": "19:45",
+          "scheduledArrival": "22:35",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkpOSCIsIkMyIjoiQ0dRIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:24:09.303Z"
+    },
+    {
+      "from": "嘉兴",
+      "to": "成都双流",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ6061",
+          "departureAirport": "嘉兴南湖机场",
+          "arrivalAirport": "成都双流国际机场",
+          "scheduledDeparture": "08:10",
+          "scheduledArrival": "11:25",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkpOSCIsIkMyIjoiQ1RVIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:24:35.934Z"
+    },
+    {
+      "from": "嘉兴",
+      "to": "成都天府",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8191",
+          "departureAirport": "嘉兴南湖机场",
+          "arrivalAirport": "成都天府国际机场",
+          "scheduledDeparture": "09:50",
+          "scheduledArrival": "13:10",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkpOSCIsIkMyIjoiVEZVIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:24:43.991Z"
+    },
+    {
+      "from": "嘉兴",
+      "to": "重庆",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ6019",
+          "departureAirport": "嘉兴南湖机场",
+          "arrivalAirport": "重庆江北国际机场",
+          "scheduledDeparture": "10:10",
+          "scheduledArrival": "13:05",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkpOSCIsIkMyIjoiQ0tHIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:24:52.067Z"
+    },
+    {
+      "from": "嘉兴",
+      "to": "贵阳",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ6011",
+          "departureAirport": "嘉兴南湖机场",
+          "arrivalAirport": "贵阳龙洞堡国际机场",
+          "scheduledDeparture": "17:00",
+          "scheduledArrival": "20:10",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkpOSCIsIkMyIjoiS1dFIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:24:59.717Z"
+    },
+    {
+      "from": "嘉兴",
+      "to": "哈尔滨",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkpOSCIsIkMyIjoiSFJCIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:25:20.691Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "嘉兴",
+      "to": "海口",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkpOSCIsIkMyIjoiSEFLIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:25:31.503Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "嘉兴",
+      "to": "深圳",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8655",
+          "departureAirport": "嘉兴南湖机场",
+          "arrivalAirport": "深圳宝安国际机场",
+          "scheduledDeparture": "13:10",
+          "scheduledArrival": "15:30",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkpOSCIsIkMyIjoiU1pYIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:26:30.305Z"
+    },
+    {
+      "from": "嘉兴",
+      "to": "乌鲁木齐",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkpOSCIsIkMyIjoiVVJDIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:26:41.080Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "嘉兴",
+      "to": "银川",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkpOSCIsIkMyIjoiSU5DIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:26:52.051Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "济南",
+      "to": "长春",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8696",
+          "departureAirport": "济南遥墙国际机场",
+          "arrivalAirport": "长春龙嘉国际机场",
+          "scheduledDeparture": "14:00",
+          "scheduledArrival": "16:05",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IlROQSIsIkMyIjoiQ0dRIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:40:05.043Z"
+    },
+    {
+      "from": "荆州",
+      "to": "成都天府",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IlNIUyIsIkMyIjoiVEZVIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:40:15.820Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "荆州",
+      "to": "杭州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IlNIUyIsIkMyIjoiSEdIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:33:26.545Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "荆州",
+      "to": "兰州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IlNIUyIsIkMyIjoiTEhXIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:40:26.447Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "荆州",
+      "to": "温州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IlNIUyIsIkMyIjoiV05aIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:33:37.356Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "鸡西",
+      "to": "杭州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkpYQSIsIkMyIjoiSEdIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:40:37.163Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "鸡西",
+      "to": "烟台",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8822",
+          "departureAirport": "鸡西兴凯湖机场",
+          "arrivalAirport": "烟台蓬莱国际机场",
+          "scheduledDeparture": "12:40",
+          "scheduledArrival": "15:00",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkpYQSIsIkMyIjoiWU5UIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:41:00.917Z"
+    },
+    {
+      "from": "昆明",
+      "to": "长春",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IktNRyIsIkMyIjoiQ0dRIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:41:11.881Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    },
+    {
+      "from": "昆明",
+      "to": "杭州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8882",
+          "departureAirport": "昆明长水国际机场",
+          "arrivalAirport": "杭州萧山国际机场",
+          "scheduledDeparture": "22:05",
+          "scheduledArrival": "00:35",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IktNRyIsIkMyIjoiSEdIIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:41:19.815Z"
+    },
+    {
+      "from": "昆明",
+      "to": "临沂",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8141",
+          "departureAirport": "昆明长水国际机场",
+          "arrivalAirport": "临沂启阳国际机场",
+          "scheduledDeparture": "07:55",
+          "scheduledArrival": "11:00",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IktNRyIsIkMyIjoiTFlJIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:41:27.488Z"
+    },
+    {
+      "from": "昆明",
+      "to": "徐州",
+      "date": "2026-11-02",
+      "status": "ok",
+      "flights": [
+        {
+          "flightNo": "GJ8149",
+          "departureAirport": "昆明长水国际机场",
+          "arrivalAirport": "徐州观音国际机场",
+          "scheduledDeparture": "14:05",
+          "scheduledArrival": "16:45",
+          "arrivalDayOffset": null,
+          "flightDate": "2026-11-02"
+        }
+      ],
+      "sourceUrl": "https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IktNRyIsIkMyIjoiWFVaIiwiVCI6IjIwMjYtMTEtMDIiLCJGIjoiR0oiLCJRIjoiMSJ9",
+      "checkedAt": "2026-11-02T03:42:19.977Z"
+    },
+    {
+      "from": "临沂",
+      "to": "杭州",
+      "date": "2026-11-02",
+      "status": "error",
+      "flights": [],
+      "checkedAt": "2026-11-02T03:00:50.740Z",
+      "reason": "官网查询结果未确认完整，需重新核实；空白或加载中的页面不代表没有航班。"
+    }
+  ],
+  "coverage": {
+    "referenceDirections": 402,
+    "directionsWithFlights": 49,
+    "flightRecords": 64,
+    "remainingDirections": 353
+  },
+  "notes": [
+    "仅保存已看到的官网航班事实，不是完整时刻表或实时余票。",
+    "未确认加载完成的空结果按待核实处理，不作无航班结论。",
+    "官网未明确提供到达日期，不从时钟大小推测跨日。",
+    "普通航班查询不表示该班可用畅飞卡兑换。"
+  ]
+}
