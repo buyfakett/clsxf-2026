@@ -230,3 +230,235 @@ test('collected flight statuses display safely without inventing absent statuses
   flight.flightStatus = '   ';
   assert.doesNotMatch(run("officialRouteDetails('杭州', '广州')"), /class="official-flight-status/);
 });
+
+function futureFixtures() {
+  const snapshot = fixtures();
+  snapshot.searchWindow = { startDate: '2026-11-03', endDate: '2026-12-02' };
+  snapshot.coverage = { referenceDirections: 3 };
+  const query = (from, to, date, flightNo, extra = {}) => ({
+    from, to, date, status: 'ok', checkedAt: '2026-11-02T04:00:00Z',
+    sourceUrl: 'https://www.loongair.cn/#/web/ticket/flightDynamic',
+    flights: [{ flightNo, departureAirport: from, arrivalAirport: to,
+      scheduledDeparture: '10:00', scheduledArrival: '12:00', arrivalDayOffset: null,
+      flightDate: date }], ...extra
+  });
+  snapshot.queries.push(
+    query('杭州', '广州', '2026-11-04', 'FUTURE-SUPERSEDED', { checkedAt: '2026-11-02T03:00:00Z' }),
+    query('杭州', '广州', '2026-11-04', 'FUTURE-LATEST'),
+    query('广州', '杭州', '2026-11-05', 'FUTURE-RETURN'),
+    query('杭州', '广州', '2026-11-06', 'FUTURE-CANCELLED', {
+      flights: [{ flightNo: 'FUTURE-CANCELLED', flightDate: '2026-11-06', flightStatus: '航班取消' }]
+    }),
+    query('杭州', '广州', '2026-11-07', 'FUTURE-WRONG-DATE', {
+      flights: [{ flightNo: 'FUTURE-WRONG-DATE', flightDate: '2026-11-02' }]
+    }),
+    query('杭州', '广州', '2026-11-08', 'FUTURE-UNCONFIRMED', { status: 'error', flights: [] }),
+    query('杭州', '广州', '2026-12-03', 'FUTURE-OUTSIDE-WINDOW')
+  );
+  return snapshot;
+}
+function futureHarness(snapshot = futureFixtures(), today = '2026-11-02') {
+  const result = harness(snapshot);
+  result.context.officialToday = () => today;
+  return result;
+}
+
+test('future view defaults to the configured window and lists only actual confirmed dates', () => {
+  const { run } = futureHarness();
+  assert.equal(run('officialFlightViewValue()'), 'future');
+  const markup = run("officialRouteDetails('杭州', '广州')");
+  assert.match(markup, /未来已核实 2 班/);
+  assert.match(markup, /最早已查到出发：2026-11-03/);
+  assert.match(markup, /已查到日期：2026-11-03、2026-11-04/);
+  assert.match(markup, /FIXTURE-NEXT-DATE/);
+  assert.match(markup, /FUTURE-LATEST/);
+  assert.doesNotMatch(markup, /FIXTURE-OUTBOUND|FUTURE-SUPERSEDED|FUTURE-CANCELLED|FUTURE-WRONG-DATE|FUTURE-UNCONFIRMED|FUTURE-OUTSIDE-WINDOW/);
+  assert.match(run('officialFlightMetaText()'), /2 个方向已收录 3 条航班记录，涉及 3 个出发日期/);
+  assert.match(run('officialFlightMetaText()'), /1 个方向尚未取得未来航班明细/);
+  const controls = run('officialFlightControls()');
+  assert.match(controls, /<select id="officialFlightView">/);
+  assert.match(controls, /查询范围：2026-11-03—2026-12-02/);
+  assert.doesNotMatch(controls, /id="officialFlightDate"/);
+});
+
+test('future round trips show independent departure dates rather than imply a matched itinerary', () => {
+  const { run } = futureHarness();
+  const single = run("officialRouteDetails('杭州', '广州')");
+  assert.equal(countDirections(single), 1);
+  assert.doesNotMatch(single, /FUTURE-RETURN/);
+  const mutual = run("officialRouteDetails('杭州', '广州', true)");
+  assert.equal(countDirections(mutual), 2);
+  assert.match(mutual, /未来已核实 3 班/);
+  assert.match(mutual, /杭州 → 广州/);
+  assert.match(mutual, /广州 → 杭州/);
+  assert.match(mutual, /FUTURE-RETURN/);
+  assert.match(mutual, /最早已查到出发：2026-11-05/);
+});
+
+test('future metadata separates the current target set from extra findings and historical-only routes', () => {
+  const snapshot = futureFixtures();
+  snapshot.coverage.referenceDirections = 402;
+  snapshot.futureTargetDirections = [
+    { from: '杭州', to: '广州' },
+    { from: '杭州', to: '北京首都' }
+  ];
+  const { run } = futureHarness(snapshot);
+  const metadata = run('officialFlightMetaText()');
+  assert.match(metadata, /未来范围内：2 个方向已收录 3 条航班记录/);
+  assert.match(metadata, /本轮补查 2 个方向，其中 1 个已核实、1 个待核实/);
+  assert.doesNotMatch(metadata, /400 个方向尚未取得未来航班明细/);
+  // The extra return flight counts overall, but cannot complete either target.
+  snapshot.queries = snapshot.queries.filter(q => q.from !== '杭州' || q.to !== '广州' || q.date === '2026-11-02');
+  const onlyExtra = run('officialFlightMetaText()');
+  assert.match(onlyExtra, /未来范围内：1 个方向已收录 1 条航班记录/);
+  assert.match(onlyExtra, /本轮补查 2 个方向，其中 0 个已核实、2 个待核实/);
+  assert.match(run("officialRouteDetails('杭州', '北京首都')"), /未来日期待核实/);
+  assert.match(run("officialRouteDetails('广州', '杭州')"), /FUTURE-RETURN/);
+});
+
+test('expired dates and an expired future window never fall back to historical flights', () => {
+  const { run, context } = futureHarness(undefined, '2026-11-04');
+  const markup = run("officialRouteDetails('杭州', '广州')");
+  assert.match(markup, /最早已查到出发：2026-11-04/);
+  assert.doesNotMatch(markup, /FIXTURE-NEXT-DATE|FIXTURE-OUTBOUND/);
+  context.officialToday = () => '2026-12-03';
+  assert.equal(run('officialFlightViewValue()'), 'future');
+  const expired = run("officialRouteDetails('杭州', '广州')");
+  assert.match(expired, /查询范围已过期/);
+  assert.doesNotMatch(expired, /FUTURE-LATEST|FIXTURE-OUTBOUND|FIXTURE-NEXT-DATE/);
+  assert.match(run('officialFlightMetaText()'), /查询范围已过期/);
+  assert.match(run('officialFlightControls()'), /查询范围：2026-11-03—2026-12-02（已过期）/);
+});
+
+test('a missing or cancelled-only future direction stays unknown without reusing a historical result', () => {
+  const snapshot = futureFixtures();
+  snapshot.queries = snapshot.queries.filter(q => q.from !== '杭州' || q.to !== '广州' || q.date === '2026-11-02' || q.date === '2026-11-06');
+  const { run } = futureHarness(snapshot);
+  const cancelledOnly = run("officialRouteDetails('杭州', '广州')");
+  assert.match(cancelledOnly, /未来日期待核实/);
+  assert.match(cancelledOnly, /未取得明细不表示没有航班/);
+  assert.doesNotMatch(cancelledOnly, /FIXTURE-OUTBOUND|FUTURE-CANCELLED|班已收录|查询无结果/);
+  assert.match(run("officialRouteDetails('杭州', '北京首都')"), /未来日期待核实/);
+  assert.doesNotMatch(run("officialRouteDetails('杭州', '北京首都')"), /FIXTURE-NEXT-DAY-ARRIVAL/);
+});
+
+test('view switches preserve open details and map state while historical dates remain accessible', () => {
+  const { run, context, listeners, renders } = futureHarness();
+  const detail = (from, to, open = false) => ({ dataset: { officialFrom: from, officialTo: to }, open });
+  let details = [detail('杭州', '广州', true), detail('杭州', '北京首都')];
+  context.document.querySelectorAll = selector => selector === '.official-details[open]' ? details.filter(element => element.open) : details;
+  const camera = { ...context.camera };
+  context.render = () => { details = [detail('杭州', '广州'), detail('杭州', '北京首都')]; renders.push('rendered'); };
+  run('initOfficialFlightUI()');
+  listeners[0].listener({ target: { id: 'officialFlightView', value: 'date' } });
+  assert.equal(run('officialFlightViewValue()'), 'date');
+  assert.equal(run('officialFlightDateValue()'), '2026-11-02');
+  assert.match(run("officialRouteDetails('杭州', '广州')"), /FIXTURE-OUTBOUND/);
+  assert.match(run('officialFlightControls()'), /id="officialFlightDate"/);
+  assert.equal(details[0].open, true);
+  assert.equal(details[1].open, false);
+  assert.equal(context.selected, '杭州');
+  assert.equal(context.roundTripOnly, true);
+  assert.deepEqual({ ...context.camera }, camera);
+  assert.equal(run("setOfficialFlightView('future')"), true);
+  assert.equal(run('officialFlightViewValue()'), 'future');
+  assert.equal(details[0].open, true);
+  assert.equal(run("setOfficialFlightDate('2026-11-04')"), true);
+  assert.equal(run('officialFlightViewValue()'), 'date');
+  assert.match(run("officialRouteDetails('杭州', '广州')"), /FUTURE-LATEST/);
+  assert.doesNotMatch(run("officialRouteDetails('杭州', '广州')"), /FIXTURE-OUTBOUND|FIXTURE-NEXT-DATE/);
+  assert.equal(run("setOfficialFlightView('invalid')"), false);
+});
+
+function throughFixtures() {
+  const snapshot = futureFixtures();
+  const segment = (departureAirport, arrivalAirport, scheduledDeparture, scheduledArrival) => ({
+    flightNo: 'GJ8781', departureAirport, arrivalAirport, scheduledDeparture, scheduledArrival,
+    arrivalDayOffset: null, flightDate: '2026-11-03'
+  });
+  snapshot.airportCodes.阿克苏 = 'AKU';
+  snapshot.queries.push({
+    from: '杭州', to: '阿克苏', date: '2026-11-03', status: 'ok', sourceKind: 'flight-number',
+    sourceUrl: 'https://www.loongair.cn/#/web/ticket/flightDynamic?param=eyJDMSI6IkhHSCIsIkMyIjoiQ0FOIiwiVCI6IjIwMjYtMTEtMDMiLCJGIjoiR0o4NzgxIiwiUSI6IjAifQ%3D%3D',
+    checkedAt: '2026-11-02T07:00:00Z',
+    flights: [{
+      flightNo: 'GJ8781', departureAirport: '杭州萧山国际机场', arrivalAirport: '阿克苏红旗坡机场',
+      scheduledDeparture: '14:00', scheduledArrival: '22:10', arrivalDayOffset: null,
+      flightDate: '2026-11-03', via: ['郑州'],
+      segments: [
+        segment('杭州萧山国际机场', '郑州新郑国际机场', '14:00', '16:00'),
+        segment('郑州新郑国际机场', '阿克苏红旗坡机场', '17:05', '22:10')
+      ]
+    }]
+  });
+  return snapshot;
+}
+
+test('verified through flights show the stop and each actual leg rather than one endpoint arrow', () => {
+  const { run } = futureHarness(throughFixtures());
+  const markup = run("officialRouteDetails('杭州', '阿克苏')");
+  assert.match(markup, /未来已核实 1 班/);
+  assert.match(markup, /经停：郑州/);
+  assert.match(markup, /同一航班号 · 2 段 · 需经停/);
+  assert.match(markup, /第 1 段/);
+  assert.match(markup, /第 2 段/);
+  assert.equal((markup.match(/class="official-times"/g) || []).length, 2);
+  assert.equal((markup.match(/<strong>GJ8781<\/strong>/g) || []).length, 3);
+  assert.match(markup, /14:00/);
+  assert.match(markup, /16:00/);
+  assert.match(markup, /17:05/);
+  assert.match(markup, /22:10/);
+  assert.match(markup, /郑州新郑国际机场/);
+  assert.match(markup, /官网航班号查询来源/);
+  assert.match(markup, /不代表实时在售或畅飞卡可兑换/);
+  run("setOfficialFlightDate('2026-11-03')");
+  const exact = run("officialRouteDetails('杭州', '阿克苏')");
+  assert.match(exact, /经停：郑州/);
+  assert.match(exact, /官网航班号查询来源/);
+});
+
+test('through records require all legs to share the actual query date and flight number', () => {
+  const snapshot = throughFixtures();
+  const flight = snapshot.queries.find(q => q.to === '阿克苏').flights[0];
+  const { run } = futureHarness(snapshot);
+  flight.segments[1].flightDate = '2026-11-04';
+  assert.doesNotMatch(run("officialRouteDetails('杭州', '阿克苏')"), /GJ8781|班已收录/);
+  assert.match(run("officialRouteDetails('杭州', '阿克苏')"), /未来日期待核实/);
+  run("setOfficialFlightDate('2026-11-03')");
+  assert.match(run("officialRouteDetails('杭州', '阿克苏')"), /暂无明细/);
+  flight.segments[1].flightDate = '2026-11-03';
+  flight.segments[1].flightNo = 'GJ9999';
+  assert.doesNotMatch(run("officialRouteDetails('杭州', '阿克苏')"), /GJ8781|GJ9999/);
+  flight.segments[1].flightNo = 'GJ8781';
+  assert.match(run("officialRouteDetails('杭州', '阿克苏')"), /同一航班号/);
+  flight.segments = [];
+  assert.doesNotMatch(run("officialRouteDetails('杭州', '阿克苏')"), /GJ8781/);
+});
+
+test('a cancelled through leg excludes the whole future service and stays visible in exact-date history', () => {
+  const snapshot = throughFixtures();
+  const flight = snapshot.queries.find(q => q.to === '阿克苏').flights[0];
+  flight.segments[1].flightStatus = '航班取消';
+  const { run } = futureHarness(snapshot);
+  assert.match(run("officialRouteDetails('杭州', '阿克苏')"), /未来日期待核实/);
+  assert.doesNotMatch(run("officialRouteDetails('杭州', '阿克苏')"), /GJ8781/);
+  run("setOfficialFlightDate('2026-11-03')");
+  const exact = run("officialRouteDetails('杭州', '阿克苏')");
+  assert.match(exact, /is-cancelled/);
+  assert.match(exact, /航班取消（含经停段）/);
+  assert.match(exact, /经停：郑州/);
+});
+
+test('through stop names, leg airports and source labels render safely', () => {
+  const snapshot = throughFixtures();
+  const flight = snapshot.queries.find(q => q.to === '阿克苏').flights[0];
+  flight.via = ['郑州<script>alert(1)</script>'];
+  flight.segments[0].arrivalAirport = '<img src=x onerror=alert(1)>郑州新郑国际机场';
+  const { run } = futureHarness(snapshot);
+  const markup = run("officialRouteDetails('杭州', '阿克苏')");
+  assert.doesNotMatch(markup, /<script>|<img/);
+  assert.match(markup, /郑州&lt;script&gt;/);
+  assert.match(markup, /&lt;img/);
+  assert.match(markup, /href="https:\/\/www\.loongair\.cn\/#\/web\/ticket\/flightDynamic\?param=/);
+  assert.match(markup, /target="_blank" rel="noopener noreferrer"/);
+});
